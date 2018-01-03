@@ -3,3 +3,36 @@
 atomとの連携テスト
 
 branch切ったよ
+
+プッシュしたデータを変更したあとリモートリポジトリにプッシュする
+1 変更をインデックスに追加
+	git add test.txt
+2 ファイルを登録(コミット)
+	git commit -m "---"
+3 データを送信
+	git push origin master
+
+ブランチ作成
+1 ブランチを作成
+	git branch ---
+2 ブランチを移動
+	git checkout ---
+
+現在の存在するブランチの確認
+	git branch
+
+作成したブランチにデータを送信
+1 インデックスに変更点を登録
+	git add test.txt
+2 ファイルをローカルレポジトリに登録(コミット)
+	git commit -m "---"
+3 GitHubにローカルリポジトリのデータを送信
+	git push origin ---
+
+ブランチをマスターにマージする
+1 マージ先のブランチを選択
+	git checkout master
+2 masterにブランチを結合
+	git merge testbranch
+3 結合情報をGitHubに送信(プッシュ)
+	git push origin master
